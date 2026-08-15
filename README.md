@@ -18,9 +18,9 @@ If local port `8000` is not available for any reason, you can change the port fo
 
 ### GitHub Codespaces
 
-You can create a GitHub codespace by clicking on the badge below:
+You can create a GitHub codespace by clicking on the badge below (a `4-core` Machine type is recommended):
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/PardhavMaradani/mdadash-demo)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/PardhavMaradani/mdadash-mini-workshop-2026)
 
 Once the codespace is fully setup, it will automatically launch a preview browser window showing the dashboard in the editor area.
 

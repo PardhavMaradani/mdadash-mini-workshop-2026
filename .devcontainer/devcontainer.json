@@ -1,0 +1,25 @@
+{
+  "name": "mdadash demo",
+  "image": "ghcr.io/pardhavmaradani/mdadash-demo:latest",
+  "forwardPorts":[8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "mdadash server port",
+      "onAutoForward": "openPreview",
+      "visibility": "public"
+    }
+  },
+  "overrideCommand": false,
+  "customizations": {
+    "codespaces": {
+      "openFiles": [] 
+    },
+    "vscode": {
+      "extensions": [],
+      "settings": {
+        "terminal.integrated.allowInUntrustedWorkspace": true,
+        "git.enabled": false
+      }
+    }
+  }
+}
