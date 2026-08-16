@@ -9,6 +9,7 @@ Welcome to the [mdadash](https://github.com/MDAnalysis/mdadash) mini workshop.
 If you have [Docker](https://www.docker.com/) installed in your system:
 
 ```sh
+docker pull ghcr.io/pardhavmaradani/mdadash-demo:latest
 docker run -it -p 8000:8000 ghcr.io/pardhavmaradani/mdadash-demo:latest
 ```
 
