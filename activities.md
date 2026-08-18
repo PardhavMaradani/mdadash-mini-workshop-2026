@@ -1,21 +1,21 @@
 # Activities
 
-1. [Control simulation](#control-simulation)
-2. [Change Widget inputs](#change-widget-inputs)
-3. [Add new Widgets](#add-new-widgets)
-4. [Check a custom code Widget](#check-a-custom-code-widget)
-5. [Add a custom code Widget](#add-a-custom-code-widget)
-6. [Customize a built-in Widget](#customize-a-built-in-widget)
-7. [Add a custom Widget](#add-a-custom-code-widget)
+1. [Control simulation](#1-control-simulation)
+2. [Change Widget inputs](#2-change-widget-inputs)
+3. [Add new Widgets](#3-add-new-widgets)
+4. [Check a custom code Widget](#4-check-a-custom-code-widget)
+5. [Add a custom code Widget](#5-add-a-custom-code-widget)
+6. [Customize a built-in Widget](#6-customize-a-built-in-widget)
+7. [Add a custom Widget](#7-add-a-custom-widget)
 
-## Control simulation
+## 1. Control simulation
 
 - Connect / Disconnect / Resume / Pause
 - Check 'Settings > Universe Configuration'
   - Editable when disconnected
 - Disable session info and energies display on dashboard
 
-## Change Widget inputs
+## 2. Change Widget inputs
 
 - Change `COMDistance` Widget inputs
   - Check input validations for selection phrase changes
@@ -23,19 +23,19 @@
 
 > Tip: Double clicking on the Widget opens the Widget details. Alternatively, click on the three dots icon on the Widget title and select `Edit` 
 
-## Add new Widgets
+## 3. Add new Widgets
 
 - Add `DSSP` Widget
 - Add a Velocity Autocorrelation (VACF) plot
   - Enable 'Show running integral' to observe diffusion coefficient
 
-## Check a custom code Widget
+## 4. Check a custom code Widget
 
 - Check the `Kinetic Energy` Widget on dashboard
   - Go to Widget details
 - Check Notebooks to see where `SimplePlot` class is defined
 
-## Add a custom code Widget
+## 5. Add a custom code Widget
 
 Add a custom code widget to display 'Box Volume'
 
@@ -51,7 +51,7 @@ Add a custom code widget to display 'Box Volume'
   ```
 - See real-time plot in the `Output` section and on dashboard when simulation is running
 
-## Customize a built-in Widget
+## 6. Customize a built-in Widget
 
 Customize the `COMDistance` widget to print the distance in addition to the plot.
 
@@ -62,7 +62,7 @@ Customize the `COMDistance` widget to print the distance in addition to the plot
   - The Notebook was created by cloning the built-in `COMDistance` Widget code
 - The `COMDistance` widget on the dashboard should automatically get refreshed
 
-## Add a custom Widget
+## 7. Add a custom Widget
 
 Add a custom Widget to show an plot the COM of a selection.
 
