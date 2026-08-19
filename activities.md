@@ -64,7 +64,7 @@ Customize the `COMDistance` widget to print the distance in addition to the plot
 
 ## 7. Add a custom Widget
 
-Add a custom Widget to show an plot the COM of a selection.
+Add a custom Widget to show and plot the COM of a selection.
 
 - Go to Notebooks
 - Create a new Notebook
@@ -99,10 +99,8 @@ Add a custom Widget to show an plot the COM of a selection.
           print(f"COM of {self.selection} is ", com)
           self.plot.show(f"COM of {self.selection}", com)
   ```
-- Add the new `Show COM` widget to the dashboard
+- Add a new `Show COM` widget instance to the dashboard
 - Check Widget details and update selection phrase to see updated plot
+- Create new instances of this widget with different input selections
 
 > Note: The above simple Widget class has no validations and plot reset when input changes
-
-
-

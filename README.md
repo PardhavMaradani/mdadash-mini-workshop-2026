@@ -2,6 +2,10 @@
 
 Welcome to the [mdadash](https://github.com/MDAnalysis/mdadash) mini workshop.
 
+The presentation slides are available at [presentation.pdf](presentation.pdf).
+
+Please follow the [Setup instructions](#setup-instructions) below to try out the demo and interactive activities described in [activities.md](activities.md) during the workshop.
+
 ## Setup instructions
 
 ### GitHub Codespaces
