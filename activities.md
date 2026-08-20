@@ -38,8 +38,15 @@ Change `COMDistance` Widget inputs
 
 - Click on the 'Add Widget' button on main dashboard
   - Add `DSSP` Widget
+    - Check that the plot updates when simulation running
+    - Change the 'Run Frequency' to `batch`
+      - Now the plot will only update after every 100 frames (configured batch size)
+    - Change the 'Run mode' to `parallel`
+      - Internally, the analysis will now run as a separate process
   - Add a Velocity Autocorrelation (VACF) plot (`ACF` Widget)
     - Enable 'Show running integral' to observe diffusion coefficient
+  - Add `MSD Analysis` Widget
+    - Emable 'Show diffusion coefficient' to observe diffusion coefficient
 - Check layout presets, customize as required
 
 ## 4. Check a custom code Widget
