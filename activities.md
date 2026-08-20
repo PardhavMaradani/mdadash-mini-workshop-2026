@@ -46,7 +46,7 @@ Change `COMDistance` Widget inputs
   - Add a Velocity Autocorrelation (VACF) plot (`ACF` Widget)
     - Enable 'Show running integral' to observe diffusion coefficient
   - Add `MSD Analysis` Widget
-    - Emable 'Show diffusion coefficient' to observe diffusion coefficient
+    - Enable 'Show diffusion coefficient' to observe diffusion coefficient
 - Check layout presets, customize as required
 
 ## 4. Check a custom code Widget
