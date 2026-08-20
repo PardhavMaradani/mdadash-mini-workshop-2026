@@ -11,35 +11,49 @@
 ## 1. Control simulation
 
 - Connect / Disconnect / Resume / Pause
-- Check 'Settings > Universe Configuration'
+  - Using icons on the main app bar
+  - Sticky bar (bar showing `Frame`, `Time`, etc) color indicates current status
+- Check Universe Configuration
+  - 'Settings > Universe Configuration'
+  - Disabled when connected to the simulation
   - Editable when disconnected
-- Disable session info and energies display on dashboard
+    - All MDAnalysis Universe related config
+    - Can add custom code to setup Universe - Eg: transformations
+- Disable display of session info and energies on dashboard
+  - 'Settings > Dashboard Configuration'
+- Dashboard icon on top left from any page always navigates to the main dashboard
 
 ## 2. Change Widget inputs
 
-- Change `COMDistance` Widget inputs
+Change `COMDistance` Widget inputs
+
+- Double click on the `COMDistance` Widget on the dashboard
   - Check input validations for selection phrase changes
   - Check Widget output updates in real-time when simulation running
+  - Check the documentation for this Widget
 
 > Tip: Double clicking on the Widget opens the Widget details. Alternatively, click on the three dots icon on the Widget title and select `Edit` 
 
 ## 3. Add new Widgets
 
-- Add `DSSP` Widget
-- Add a Velocity Autocorrelation (VACF) plot
-  - Enable 'Show running integral' to observe diffusion coefficient
+- Click on the 'Add Widget' button on main dashboard
+  - Add `DSSP` Widget
+  - Add a Velocity Autocorrelation (VACF) plot (`ACF` Widget)
+    - Enable 'Show running integral' to observe diffusion coefficient
+- Check layout presets, customize as required
 
 ## 4. Check a custom code Widget
 
 - Check the `Kinetic Energy` Widget on dashboard
   - Go to Widget details
 - Check Notebooks to see where `SimplePlot` class is defined
+- Check Widget documentation
 
 ## 5. Add a custom code Widget
 
 Add a custom code widget to display 'Box Volume'
 
-- Select `Custom Code` from `Add Widget` list
+- Select `Custom Code` from `Add Widget` list from main dashboard
 - Create a plot variable in `Setup code` section and run the cell
   ```py
   bv_plot = SimplePlot(u)
@@ -60,15 +74,16 @@ Customize the `COMDistance` widget to print the distance in addition to the plot
 - Run the Notebook cell
   - The code is already updated to add a `print`
   - The Notebook was created by cloning the built-in `COMDistance` Widget code
+  - 'Run on Launch' not enabled for this Notebook, hence needed the manual run
 - The `COMDistance` widget on the dashboard should automatically get refreshed
 
 ## 7. Add a custom Widget
 
-Add a custom Widget to show and plot the COM of a selection.
+Add a custom Widget to show and plot the center-of-mass (COM) of a selection.
 
 - Go to Notebooks
 - Create a new Notebook
-- Add a custom widget class and run the cell
+- Add the following custom widget class and run the cell
 
   ```py
   from mdadash.backend.widgets.base import WidgetBase
@@ -99,7 +114,7 @@ Add a custom Widget to show and plot the COM of a selection.
           print(f"COM of {self.selection} is ", com)
           self.plot.show(f"COM of {self.selection}", com)
   ```
-- Add a new `Show COM` widget instance to the dashboard
+- Go to main dashboard and dd a new `Show COM` widget instance
 - Check Widget details and update selection phrase to see updated plot
 - Create new instances of this widget with different input selections
 
